@@ -1,0 +1,51 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 50px 190px 190px 190px;
+    grid-template-areas: 
+    "sidebar navbar"
+    "sidebar main"
+    "sidebar content"
+    "sidebar footer"
+    ;
+}
+.navbar{
+    grid-area: navbar;
+    background: #0AE075;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    grid-area: main;
+    background: #0ac869;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    grid-area: content;
+    background: #088D4B;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: #09AA59;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    grid-area: footer;
+    background: #044B28;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
